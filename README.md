@@ -21,4 +21,6 @@ The "data" folder must include the following:
    The remaining columns contain the image pixel size and the mean and standard deviation of arm diameter and arm length for each species. These measurements are     obtained from the supplementary tables of Borsuk et al. (2022).
 2. A subfolder for each species, containing the corresponding paradermal slice images in ".tif" format. Each subfolder must have the same name as the corresponding species entry in the `species` column of "pixel_info.xlsx".
 
+Once the data are provided, the SCellPack simulations are performed using the parameters derived from the dataset. However, the function **run_independent_SCellPack_simulation** in "SCellPack_run.py" can also run the simulations independently using user-defined parameters, without requiring any external data.
+
 The analyses were tested using the following versions of Python and associated libraries: Python (version 3.12.12), numpy (version 2.3.0), pandas (version 2.3.3), scipy (version 1.16.3), shapely (version 2.1.2), rasterio (version 1.5.0), imageio (version 2.37.0), skimage (version 0.26.0), matplotlib (version 3.10.8), sklearn (version 1.8.0).
